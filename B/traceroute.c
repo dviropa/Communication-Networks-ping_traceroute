@@ -20,7 +20,9 @@ int packets_sent = 0;
 int packets_received = 0;
 int first_try = 1;
 
-// Function prototypes
+/******************************************************************************
+ * Function Declarations
+ ******************************************************************************/
 unsigned short calculate_checksum(void *data, int len);
 void display_statistics();
 int send_icmp_packet(int sock, struct sockaddr *dest_addr, socklen_t addr_len, int ttl, int sequence);
